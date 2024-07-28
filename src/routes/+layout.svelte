@@ -1,7 +1,11 @@
 <script>
 	import '../app.css';
-	// import Navbar from '$com'
+	import Navbar from '../components/Navegation/Navbar/index.svelte';
+	import Footer from '../components/Navegation/Footer/index.svelte';
 </script>
 
-<nav>asfd</nav>
-<slot />
+<Navbar />
+<div class="min-h-screen">
+	<slot />
+</div>
+<Footer />

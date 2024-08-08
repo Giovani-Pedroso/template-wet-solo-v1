@@ -4,8 +4,10 @@
 	const nameOfCompany = 'Generic';
 	const links = [
 		{ name: 'Home', link: '/' },
-		{ name: 'Dashboard', link: '/' },
-		{ name: 'Login', link: '/' }
+		// { name: 'Dashboard', link: '/' },
+		{ name: 'Three', link: '/three' },
+		{ name: 'VR', link: '/VR' }
+		// { name: 'Login', link: '/' }
 	];
 	onMount(() => {
 		themeChange(false);
@@ -29,18 +31,18 @@
 			{#each links as link}
 				<li><a href={link.link}>{link.name}</a></li>
 			{/each}
-			<li>
-				<select data-choose-theme class="select select-primary max-w-xs">
-					<option disabled selected>Change theme</option>
-					<option value="light">light</option>
-					<option value="dark">dark</option>
-					<option value="retro">retro</option>
-					<option value="aqua">aqua</option>
-					<option value="wireframe">wire</option>
-					<option value="luxury">luxury</option>
-					<option value="coffee">coffee</option>
-				</select>
-			</li>
+			<!-- <li> -->
+			<!-- 	<select data-choose-theme class="select select-primary max-w-xs"> -->
+			<!-- 		<option disabled selected>Change theme</option> -->
+			<!-- 		<option value="light">light</option> -->
+			<!-- 		<option value="dark">dark</option> -->
+			<!-- 		<option value="retro">retro</option> -->
+			<!-- 		<option value="aqua">aqua</option> -->
+			<!-- 		<option value="wireframe">wire</option> -->
+			<!-- 		<option value="luxury">luxury</option> -->
+			<!-- 		<option value="coffee">coffee</option> -->
+			<!-- 	</select> -->
+			<!-- </li> -->
 			<!-- <li> -->
 			<!-- 	<details> -->
 			<!-- 		<summary>Parent</summary> -->

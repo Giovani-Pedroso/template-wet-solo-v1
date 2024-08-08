@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev --host",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
@@ -19,9 +19,12 @@
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/dat.gui": "^0.7.13",
 		"@types/eslint": "^9.6.0",
+		"@types/three": "^0.167.1",
 		"autoprefixer": "^10.4.19",
 		"daisyui": "^4.12.10",
+		"dat.gui": "^0.7.9",
 		"eslint": "^9.0.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
@@ -40,6 +43,8 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/speed-insights": "^1.0.12",
-		"theme-change": "^2.5.0"
+		"aframe": "^1.6.0",
+		"theme-change": "^2.5.0",
+		"three": "^0.167.0"
 	}
 }
